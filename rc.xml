@@ -1,0 +1,110 @@
+	<keybind key="Super_L">
+		<action name="ShowMenu"><menu>root-menu</menu></action>
+	</keybind>
+
+	<keybind key="W-Down"><action name="Unmaximize"/></keybind>
+	<keybind key="W-Up"><action name="Maximize"/></keybind>
+	<keybind key="W-Return"><action name="ToggleMaximizeVert"/></keybind>
+	<keybind key="W-Left">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</keybind>
+	<keybind key="W-Right">
+		<action name="UnmaximizeFull"/>
+		<action name="MaximizeVert"/>
+		<action name="MoveResizeTo">
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>east</direction></action>
+	</keybind>
+
+	<submenuShowDelay>0</submenuShowDelay>
+	<submenuHideDelay>50</submenuHideDelay>
+
+<context name="TRCorner">
+	<mousebind button="Left" action="Release">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<height>50%</height>
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>north</direction></action>
+		<action name="MoveToEdge"><direction>east</direction></action>
+	</mousebind>
+</context>
+<context name="TLCorner">
+	<mousebind button="Left" action="Release">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<height>50%</height>
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>north</direction></action>
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</mousebind>
+</context>
+<context name="BRCorner">
+	<mousebind button="Left" action="Release">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<height>50%</height>
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>south</direction></action>
+		<action name="MoveToEdge"><direction>east</direction></action>
+	</mousebind>
+</context>
+<context name="BLCorner">
+	<mousebind button="Left" action="Release">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<height>50%</height>
+			<width>50%</width>
+		</action>
+		<action name="MoveToEdge"><direction>south</direction></action>
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</mousebind>
+</context>
+
+		<!--Context Right-->
+		<mousebind button="Left" action="Release">
+			<action name="UnmaximizeFull"/>
+			<action name="MaximizeVert"/>
+			<action name="MoveResizeTo">
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+			<action name="MoveToEdge"><direction>east</direction></action>
+		</mousebind>
+		<!--Context Left-->
+		<mousebind button="Left" action="Release">
+			<action name="UnmaximizeFull"/>
+			<action name="MaximizeVert"/>
+			<action name="MoveResizeTo">
+				<width>50%</width>
+				<height>100%</height>
+			</action>
+			<action name="MoveToEdge"><direction>west</direction></action>
+		</mousebind>
+		<!--Context Top-->
+		<mousebind button="Left" action="Release">
+			<action name="UnmaximizeFull"/>
+			<action name="MoveResizeTo">
+				<width>100%</width>
+				<height>50%</height>
+			</action>
+			<action name="MoveToEdge"><direction>north</direction></action>
+		</mousebind>
+		<!--Context Bottom-->
+		<mousebind button="Left" action="Release">
+			<action name="UnmaximizeFull"/>
+			<action name="MoveResizeTo">
+				<width>100%</width>
+				<height>50%</height>
+			</action>
+			<action name="MoveToEdge"><direction>south</direction></action>
+		</mousebind>

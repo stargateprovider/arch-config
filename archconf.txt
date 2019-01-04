@@ -1,0 +1,85 @@
+useradd --create-home NIMI
+
+installida:
+base base-devel (kohe, sisaldab sudo fakeroot)
+xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu menumaker links firefox pcmanfm tint2 xcompmgr git
+
+optional:
+go tk (linux-headers virtualbox) / (qemu)
+
+failis
+/etc/pacman.conf
+uncommentida (wine installimise jaoks)
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+yay:
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+yay abil:
+console-tdm hsetroot profile-sync-daemon anything-sync-daemon sublime-text-dev
+
+visudo
+%wheel      ALL=(ALL) ALL
+kasutaja   ALL=(ALL) ALL
+
+faili
+~/.config/openbox/autostart (tuleb luua, ~ on /home/kasutaja)
+või /etc/xdg/openbox/autostart (on parem?)
+lisada
+hsetroot -solid "#000000"
+
+xcompmgr -r0 -o0 -l0 -O0 -D0 -C &
+tint2 &
+
+faili
+/home/kasutaja/.bash_profile
+lisada
+source /usr/bin/tdm
+
+faili
+home/kasutaja/.bashrc
+[ -n "$TERM" ] && transset-df --id "$WINDOWID" >/dev/null
+
+
+faili
+/etc/X11/xinit/xinitrc
+lisada
+exec tdm --xstart
+eemaldada xtermid
+
+
+urxvt tabide jaoks commandid:
+touch ~/.Xresources (loob faili)
+sudo vi ~/.Xresources
+kirjutada:
+URxvt*scrollstyle:		plain
+URxvt*externalBorder:		1
+URxvt*background: 		0
+URxvt*foreground: 		#fefefe
+URxvt*color0:			#323232
+URxvt*color1:			#757575
+URxvt*color2:			#000000
+URxvt*color3:			#ffffff
+URxvt*borderColor:		#323232
+URxvt*boldFont:			URxvt*font
+URxvt*tab-bg:			2
+URxvt*tab-fg:			3
+URxvt*tabbar-bg:		0
+URxvt*tabbar-fg:		1
+URxvt*perl-ext-common:		default,matcher,tabbed
+URxvt*url-launcher:		/usr/bin/xdg-open
+URxvt*matcher.button:		1
+
+
+luua /home/kasutaja/.themes/THEMENAME/openbox-3/themerc
+themerc:
+kõik borderid 0 v.a. osd.border.width: 1
+
+
+firefox about:config:
+browser.cache.disk.enable	false
+browser.cache.memory.enable	true
+browser.cache.memory.capacity	-1

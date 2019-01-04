@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<menu id="3" label="Utilities">
+			<item label="urxvt">
+				<action name="Execute">
+					<execute>urxvt</execute>
+				</action>
+			</item>
+			<item label="Xterm">
+				<action name="Execute">
+					<execute>xterm</execute>
+				</action>
+			</item>
+			<item label="Top">
+				<action name="Execute">
+					<execute>urxvt -e top</execute>
+				</action>
+			</item>
+			<item label="Pstree">
+				<action name="Execute">
+					<execute>urxvt -e pstree.x11</execute>
+				</action>
+			</item>
+			<item label="Xkill">
+				<action name="Execute">
+					<execute>xkill</execute>
+				</action>
+			</item>
+			<item label="File Manager PCManFM">
+				<action name="Execute">
+					<execute>pcmanfm</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="1" label="Development">
+			<item label="Python">
+				<action name="Execute">
+					<execute>urxvt -e python</execute>
+				</action>
+			</item>
+			<item label="IDLE (Python IDE)">
+				<action name="Execute">
+					<execute>idle</execute>
+				</action>
+			</item>
+			<item label="Sublime Text">
+				<action name="Execute">
+					<execute>subl3</execute>
+				</action>
+			</item>
+			<item label="Nano">
+				<action name="Execute">
+					<execute>urxvt -e nano</execute>
+				</action>
+			</item>
+			<item label="Vi">
+				<action name="Execute">
+					<execute>urxvt -e vi</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="2" label="Network">
+			<item label="FireFox">
+				<action name="Execute">
+					<execute>firefox</execute>
+				</action>
+			</item>
+			<item label="Links">
+				<action name="Execute">
+					<execute>urxvt -e links</execute>
+				</action>
+			</item>
+			<item label="Links graphical">
+				<action name="Execute">
+					<execute>urxvt -g links</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="4" label="Settings">
+			<item label="Openbox Configuration Manager">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Openbox Menu Editor">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Tint2 Settings">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Preferred Applications">
+				<action name="Execute">
+					<execute>libfm-pref-apps</execute>
+				</action>
+			</item>
+			<item label="Desktop Preferences">
+				<action name="Execute">
+					<execute>pcmanfm --desktop-pref</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="5" label="OpenBox">
+			<menu id="client-list-menu"/>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<separator/>
+			<item label="Logout">
+				<action name="Exit"/>
+			</item>
+			<item label="Reboot">
+				<action name="shutdown -r now"/>
+			</item>
+			<item label="Shutdown">
+				<action name="shutdown -h now"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
