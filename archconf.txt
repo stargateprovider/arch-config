@@ -2,10 +2,10 @@ useradd --create-home NIMI
 
 installida:
 base base-devel (kohe, sisaldab sudo fakeroot)
-xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu menumaker links firefox pcmanfm tint2 xcompmgr git
+xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu links firefox pcmanfm tint2 xcompmgr git
 
 optional:
-go tk (linux-headers virtualbox) / (qemu)
+go tk menumaker transset-df (linux-headers virtualbox) / (qemu)
 
 failis
 /etc/pacman.conf
@@ -27,7 +27,7 @@ kasutaja   ALL=(ALL) ALL
 
 faili
 ~/.config/openbox/autostart (tuleb luua, ~ on /home/kasutaja)
-vıi /etc/xdg/openbox/autostart (on parem?)
+v√µi /etc/xdg/openbox/autostart (on parem?)
 lisada
 hsetroot -solid "#000000"
 
@@ -76,7 +76,7 @@ URxvt*matcher.button:		1
 
 luua /home/kasutaja/.themes/THEMENAME/openbox-3/themerc
 themerc:
-kıik borderid 0 v.a. osd.border.width: 1
+k√µik borderid 0 v.a. osd.border.width: 1
 
 
 firefox about:config:
