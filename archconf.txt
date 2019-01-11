@@ -5,7 +5,7 @@ base base-devel (kohe, sisaldab sudo fakeroot)
 xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu links firefox pcmanfm tint2 xcompmgr transset-df git
 
 optional:
-go python tk dialog wpa_applicant menumaker (linux-headers virtualbox) / (qemu)
+go python tk dialog wpa_applicant alsamixer pulseaudio menumaker (linux-headers virtualbox) / (qemu)
 
 failis
 /etc/pacman.conf
