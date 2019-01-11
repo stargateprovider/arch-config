@@ -22,8 +22,10 @@ yay abil:
 console-tdm hsetroot profile-sync-daemon anything-sync-daemon? sublime-text-dev
 
 visudo
-%wheel      ALL=(ALL) ALL
-kasutaja   ALL=(ALL) ALL
+%wheel ALL=(ALL) ALL
+kasutaja ALL=(ALL) ALL
+kasutaja ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+%sudo ALL=(ALL) ALL
 
 faili
 ~/.config/openbox/autostart (tuleb luua, ~ on /home/kasutaja)
