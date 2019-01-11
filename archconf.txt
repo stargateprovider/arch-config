@@ -2,10 +2,10 @@ useradd --create-home NIMI
 
 installida:
 base base-devel (kohe, sisaldab sudo fakeroot)
-xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu links firefox pcmanfm tint2 xcompmgr git
+xorg xorg-server xterm/rxvt-unicode p7zip openbox obconf obmenu links firefox pcmanfm tint2 xcompmgr transset-df git
 
 optional:
-go tk menumaker transset-df (linux-headers virtualbox) / (qemu)
+go python tk dialog wpa_applicant menumaker (linux-headers virtualbox) / (qemu)
 
 failis
 /etc/pacman.conf
@@ -19,7 +19,7 @@ cd yay
 makepkg -si
 
 yay abil:
-console-tdm hsetroot profile-sync-daemon anything-sync-daemon sublime-text-dev
+console-tdm hsetroot profile-sync-daemon anything-sync-daemon? sublime-text-dev
 
 visudo
 %wheel      ALL=(ALL) ALL
@@ -30,9 +30,9 @@ faili
 või /etc/xdg/openbox/autostart (on parem?)
 lisada
 hsetroot -solid "#000000"
-
 xcompmgr -r0 -o0 -l0 -O0 -D0 -C &
 tint2 &
+xbacklight -set 2 &
 
 faili
 /home/kasutaja/.bash_profile
@@ -83,3 +83,9 @@ firefox about:config:
 browser.cache.disk.enable	false
 browser.cache.memory.enable	true
 browser.cache.memory.capacity	-1
+
+USB UEFI+BIOS install:
+http://valleycat.org/linux/arch-usb.html?i=1
+https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_a_USB_key
+wifi jaoks:
+http://www.linuxandubuntu.com/home/how-to-setup-a-wifi-in-arch-linux-using-terminal
