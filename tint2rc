@@ -85,7 +85,7 @@ border_color_pressed = #d9d9d9 100
 
 #-------------------------------------
 # Panel
-panel_items = LTSBC
+panel_items = LTSPPPBC
 panel_size = 100% 23
 panel_margin = 0 0
 panel_padding = 0 0 3
@@ -220,6 +220,55 @@ battery_uwheel_command =
 battery_dwheel_command = 
 ac_connected_cmd = 
 ac_disconnected_cmd = 
+
+#-------------------------------------
+# Button 1
+button = new
+button_text = ◀️))
+button_lclick_command = urxvt -e alsamixer
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font = Cantarell Light 9
+button_font_color = #ffffff 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Button 2
+button = new
+button_text = wifi
+button_lclick_command = urxvt -e sudo wifi-menu -o
+button_rclick_command = 
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font = Cantarell 10
+button_font_color = #51fffd 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
+
+#-------------------------------------
+# Button 3
+button = new
+button_text = ↑↓
+button_tooltip = ip link set [L-Click: wlo1 up / R-Click: wlo1 down]
+button_lclick_command = urxvt -e sudo ip link set wlo1 up
+button_rclick_command = urxvt -e sudo ip link set wlo1 down
+button_mclick_command = 
+button_uwheel_command = 
+button_dwheel_command = 
+button_font = Cantarell Bold 10
+button_font_color = #51fffd 100
+button_padding = 0 0
+button_background_id = 0
+button_centered = 0
+button_max_icon_size = 0
 
 #-------------------------------------
 # Tooltip
