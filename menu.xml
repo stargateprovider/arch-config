@@ -78,6 +78,43 @@
 			</item>
 		</menu>
 		<separator/>
+		<menu id="root-menu-805312" label="Backlight">
+			<item label="1%">
+				<action name="Execute">
+					<execute>xbacklight -set 1</execute>
+				</action>
+			</item>
+			<item label="5%">
+				<action name="Execute">
+					<execute>xbacklight -set 5</execute>
+				</action>
+			</item>
+			<item label="15%">
+				<action name="Execute">
+					<execute>xbacklight -set 15</execute>
+				</action>
+			</item>
+			<item label="25%">
+				<action name="Execute">
+					<execute>xbacklight -set 25</execute>
+				</action>
+			</item>
+			<item label="50%">
+				<action name="Execute">
+					<execute>xbacklight -set 50</execute>
+				</action>
+			</item>
+			<item label="75%">
+				<action name="Execute">
+					<execute>xbacklight -set 75</execute>
+				</action>
+			</item>
+			<item label="100%">
+				<action name="Execute">
+					<execute>xbacklight -set 100</execute>
+				</action>
+			</item>
+		</menu>
 		<menu id="4" label="Settings">
 			<item label="Openbox Configuration Manager">
 				<action name="Execute">
@@ -113,6 +150,11 @@
 			<separator/>
 			<item label="Logout">
 				<action name="Exit"/>
+			</item>
+			<item label="Suspend">
+				<action name="Execute">
+					<execute>systemctl suspend</execute>
+				</action>
 			</item>
 			<item label="Reboot">
 				<action name="Execute">
