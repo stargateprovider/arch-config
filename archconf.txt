@@ -89,5 +89,14 @@ browser.cache.memory.capacity	-1
 USB UEFI+BIOS install:
 http://valleycat.org/linux/arch-usb.html?i=1
 https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_a_USB_key
-wifi jaoks:
+https://wiki.archlinux.org/index.php/Multiboot_USB_drive#Simple_installation
+
+Lisad:
 http://www.linuxandubuntu.com/home/how-to-setup-a-wifi-in-arch-linux-using-terminal
+https://carlosbecker.com/posts/msfonts-archlinux/
+https://wiki.archlinux.org/index.php/Improving_performance#Reduce_disk_reads.2Fwrites
+https://lifehacker.com/5687850/speed-up-firefox-by-moving-your-cache-to-ram-no-ram-disk-required
+Sync to memory:       https://youtu.be/KMw5IGIoHLM
+Profile sync daemon:  https://youtu.be/F2IY1bqzTnA
+TempleOS QEMU:        https://youtu.be/MzJYepVOZrk
+TOS instruct videos   https://templeos.holyc.xyz/Wb/Home/Web/TOSVideos.html#l1
